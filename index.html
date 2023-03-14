@@ -1,0 +1,97 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+        form{
+   border: 4px;
+   /* padding: 400px; */
+   border-radius: 15px;
+
+}
+#container{
+    border: 8px solid grey;
+    padding: 5px 20px 15px 20px;
+    border-radius: 15px;
+    background-color: rgb(219, 243, 235);
+}
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 15px 30px;
+    font-size: 17px;
+    padding-left: 300px;
+    padding-right: 300px;
+
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="date"],
+select,
+textarea{
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: rgba(230, 220, 36, 0.776);
+    color: rgb(11, 3, 3);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: white;
+    
+}
+table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-style: groove;
+}
+#head{
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+    </style>
+</head>
+<body>
+    <center>
+        <div id="container" class>
+            <div id="form">
+                <center>
+                    <form id="user-form">
+                        <h1>REGISTRATION FORM</h1>
+                    <p>Enter your name: <input type="text" id="name" name="name" placeholder="username" required></p>
+                    <p>Enter your email id: <input type="email" id="email" name="email" placeholder="Valid email" required></p>
+                    <p>Enter new password: <input type="password" id="password" name="password" placeholder="new password" required></p>
+                    <p>Date of birth: <input type="date" id="dob" name="dob" required></p>
+                    <p>I have read and accepted all the terms and conditions <input type="checkbox" id="tc"></p>
+                    <input type="submit" value="Submit">
+                    </form>
+                </center>
+            </div>
+            <h1 id="head">ENTRIES</h1>
+            <table id="usertbl" style="width:100%">
+                <tr>
+                    <th>Name</th>
+                    <th>Email ID</th>
+                    <th>Password</th>
+                    <th>Date of birth</th>
+                    <th>Accepted terms & conditions</th>
+                </tr>
+            </table>
+        </div>
+         </div>
+    </center>
+    <script src="index.js"></script>
+</body>
+</html>
